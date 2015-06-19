@@ -1,0 +1,22 @@
+dev-vcs/subversion net-misc/rsync
+
+0
+
+
+http://yate.null.ro/
+GPL-2
+Based on the subversion eclass
+~amd64
+eutils flag-o-matic multilib subversion toolchain-funcs user
+dahdi debug doc gsm mysql postgres sctp speex ssl h323 ilbc qt4 spandsp amr zaptel wanpipe sse2
+
+
+
+
+
+install preinst unpack
+
+
+
+
+
