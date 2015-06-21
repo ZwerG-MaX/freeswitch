@@ -6,12 +6,19 @@
 #       mod_event_{socket,multicast} not yet supported in ebuild
 #
 
+abstraction - Redirects API function calls using a regular expression parser (mod_abstraction)
 alsa - Alsa endpoint module (mod_alsa)
 amr - AMR-NB (Narrowband) pass-through codec module (mod_amr)
 amr_wb - AMR-WB (Wideband) pass-through codec module (mod_amrwb)
 avmd - Advanced voicemail detection application module (mod_avmd)
+bert - Analyzes a generated tone to detect audio gaps and load-test equipment (mod_bert)
+blacklist - Maintains a list to block inbound calls (mod_blacklist)
 bv - Broadvoice HD (Wideband) codec (mod_bv)
-cdr_csv - CSV (Comma-Separated-Value) CDR (Call-Detail-Record) module
+callcenter - Rule-based distribution of inbound calls to agents (mod_callcenter)
+cdr_csv - Stores Call Detail Records (CDR) in a CSV text file (mod_cdr_csv)
+cdr_mongodb - Stores Call Detail Records (CDR) in a MongoDB database (mod_cdr_mongodb)
+cdr_pg_csv - Stores Call Detail Records (CDR) in a PostgreSQL database or a CSV or SQL text file (mod_cdr_pg_csv)
+cdr_sqlite - Stores Call Detail Records (CDR) in an SQLite database (mod_cdr_sqlite)
 celt - CELT ultra-low delay wideband codec module (mod_celt)
 cepstral - Cepstral SWIFT TTS (Text-To-Speech) engine module (mod_cepstral)
 cidlookup - API commands to query CallerID lookup services (mod_cidlookup)
