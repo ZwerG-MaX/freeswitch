@@ -1,0 +1,12 @@
+_eclasses_=toolchain-funcs	42408102d713fbad60ca21349865edb4	versionator	cd0bcdb170807e4a1984115e9d53a26f	multilib	62927b3db3a589b0806255f3a002d5d3	linux-info	8cbc678e083c23e4ad546ca6509cf304	linux-mod	101302d4b7b694ea9622bbffb187d0de	eutils	9fb270e417e0e83d64ca52586c4a79de
+_md5_=4c47bb7ad98c3f726634f03b53d22e79
+SLOT=0
+DEFINED_PHASES=compile install postinst postrm preinst prepare setup
+EAPI=4
+DEPEND=dahdi? ( net-misc/dahdi ) sys-devel/gcc[cxx] sys-devel/bison sys-devel/flex kernel_linux? ( virtual/modutils ) sys-apps/sed kernel_linux? ( virtual/linux-sources )
+DESCRIPTION=Wanpipe driver for Sangoma PCI/PCIe Telephony Cards
+IUSE=+dahdi kernel_linux
+SRC_URI=ftp://ftp.sangoma.com/linux/custom/3.7/wanpipe-3.7.0.8.tgz
+KEYWORDS=-*
+HOMEPAGE=http://www.sangoma.com/
+RDEPEND=dahdi? ( net-misc/dahdi ) sys-devel/gcc[cxx] kernel_linux? ( virtual/modutils )
