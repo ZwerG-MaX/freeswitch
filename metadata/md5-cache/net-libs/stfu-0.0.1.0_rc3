@@ -1,0 +1,8 @@
+_eclasses_=
+_md5_=ab3533f7740590a40d2a55133597befc
+SLOT=0
+DEFINED_PHASES=compile install unpack
+EAPI=0
+LICENSE=MIT
+SRC_URI=http://files.freeswitch.org/freeswitch-1.0.1.tar.gz
+KEYWORDS=~amd64 ~x86
