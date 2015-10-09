@@ -6,7 +6,6 @@ net-libs/ctb 0.16: Communication toolbox library
 net-libs/gpib 3.1.101: GPIB Library (seems to be usefull only for 2.4 kernel)
 net-libs/libSquirrelFish 9999: Stand-alone version of the WebKit JavaScript engine
 net-libs/libdingaling 0.1: 
-net-libs/libiax-freeswitch 0.2.3: 
 net-libs/libiaxclient 2.1_beta3: an open source, multiplatform library for creating telephony solutions that interoperate with Asterisk, the Open Source PBX
 net-libs/libisdn 9999: ISDN (Q.931; PRI/BRI) protocol stack
 net-libs/libsng-isdn 7.8.2 7.11.2 7.12.2 7.18.2: Sangoma ISDN library
