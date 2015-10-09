@@ -19,4 +19,3 @@ net-misc/freetdm 1.0.2: Library implementing unified high level API for both sig
 net-misc/wanpipe 3.5.27 3.7.0_p8: Wanpipe driver for Sangoma PCI/PCIe Telephony Cards
 net-voip/freeswitch 1.4.18 1.4.18-r1: FreeSWITCH telephony platform
 net-voip/freeswitch-mod_ssh 9999: SSH Console module for FreeSWITCH
-net-voip/yate 4.1.0 9999: Yet Another Telephony Engine
