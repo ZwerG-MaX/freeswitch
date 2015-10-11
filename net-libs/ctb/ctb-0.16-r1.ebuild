@@ -1,19 +1,22 @@
-# Copyright 1999-2012 Gentoo Foundation
+# Copyright 1999-2015 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
+
+EAPI=5
+
 inherit eutils
 
 DESCRIPTION="Communication toolbox library"
 HOMEPAGE=""
 SRC_URI="https://iftools.com/download/${P/-//}/lib${P}.tar.gz"
 
-IUSE="-gpib debug"
+IUSE="gpib debug"
 
 SLOT="0"
 
 LICENSE="GPL"
 KEYWORDS="~amd64 ~x86"
 
-RDEPEND="gpib? ( net-libs/gpib )"
+RDEPEND="gpib? ( sci-libs/linux-gpib )"
 DEPEND="${RDEPEND}"
 
 S="${WORKDIR}/lib${P}/build"
