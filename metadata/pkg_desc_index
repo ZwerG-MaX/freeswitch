@@ -2,8 +2,7 @@ media-sound/freeswitch-sounds 1.0.51-r1: Sounds for FreeSWITCH (Meta package)
 media-sound/freeswitch-sounds-music 1.0.51: On-Hold Music for FreeSWITCH
 net-dialup/capi4k-utils 3.2.2: mISDN (modular ISDN) kernel link library and includes
 net-dialup/misdnuser 2.0.2-r1 2.0.13: mISDN (modular ISDN) kernel link library and includes
-net-libs/ctb 0.16: Communication toolbox library
-net-libs/gpib 3.1.101: GPIB Library (seems to be usefull only for 2.4 kernel)
+net-libs/ctb 0.16-r1: Communication toolbox library
 net-libs/libSquirrelFish 9999: Stand-alone version of the WebKit JavaScript engine
 net-libs/libdingaling 0.1: 
 net-libs/libiaxclient 2.1_beta3: an open source, multiplatform library for creating telephony solutions that interoperate with Asterisk, the Open Source PBX
