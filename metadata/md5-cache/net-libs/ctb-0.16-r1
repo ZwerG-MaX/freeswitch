@@ -8,5 +8,5 @@ LICENSE=GPL
 RDEPEND=gpib? ( sci-libs/linux-gpib )
 SLOT=0
 SRC_URI=https://iftools.com/download/ctb/0.16/libctb-0.16.tar.gz
-_eclasses_=eutils	f813d23e417656bf3917483643165d5a	multilib	3972ca401cf7dbb430df9995f5d8d580	toolchain-funcs	7a212e5e01adfa4805c9978366e6ee85
+_eclasses_=eutils	f20548a2f7b0128068388cd2ec26708a	multilib	3972ca401cf7dbb430df9995f5d8d580	toolchain-funcs	7a212e5e01adfa4805c9978366e6ee85
 _md5_=e5ad20411c2e6f1519f489dd19368956
