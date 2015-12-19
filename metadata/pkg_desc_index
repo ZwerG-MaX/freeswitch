@@ -1,3 +1,4 @@
+media-libs/codec2 0.5: A speech codec for bandwidth between 700 and 3200 bit/s
 media-sound/freeswitch-sounds 1.0.51-r1: Sounds for FreeSWITCH (Meta package)
 media-sound/freeswitch-sounds-music 1.0.51: On-Hold Music for FreeSWITCH
 net-dialup/capi4k-utils 3.2.2: mISDN (modular ISDN) kernel link library and includes
