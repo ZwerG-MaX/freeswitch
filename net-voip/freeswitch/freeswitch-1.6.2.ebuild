@@ -117,47 +117,55 @@ REQUIRED_USE="
 "
 
 # Though speex is obsolete (see https://wiki.freeswitch.org/wiki/Mod_speex), configure fails without it
-RDEPEND="virtual/libc
+RDEPEND="
+	virtual/libc
+	>=dev-db/sqlite-3.6.20
+	>=dev-libs/libpcre-7.8
 	>=media-libs/speex-1.2_rc1
+	>=net-misc/curl-7.19
 	libedit? ( dev-libs/libedit )
 	odbc? ( dev-db/unixODBC )
+
 	esl_java? ( >=virtual/jre-1.5:* )
 	esl_lua? ( || ( dev-lang/lua:5.1 dev-lang/luajit:2 ) )
 	esl_managed? ( >=dev-lang/mono-1.9 )
 	esl_perl? ( dev-lang/perl )
 	esl_python? ( dev-lang/python:2.7 )
+
 	freeswitch_modules_alsa? ( media-libs/alsa-lib )
-	freeswitch_modules_radius_cdr? ( net-dialup/freeradius-client )
-	freeswitch_modules_xml_curl? ( net-misc/curl )
+	freeswitch_modules_cdr_pg_csv? ( dev-db/postgresql )
 	freeswitch_modules_enum? ( >=net-libs/ldns-1.6.6 )
-	freeswitch_modules_xml_ldap? ( net-nds/openldap )
-	freeswitch_modules_ldap? ( net-nds/openldap )
-	freeswitch_modules_java? ( >=virtual/jre-1.5:* )
+	freeswitch_modules_erlang_event? ( dev-lang/erlang )
+	freeswitch_modules_gsmopen? ( net-libs/ctb[-gpib] app-mobilephone/gsmlib )
 	freeswitch_modules_h323? ( || ( net-libs/openh323 net-libs/ptlib ) )
+	freeswitch_modules_java? ( >=virtual/jre-1.5:* )
+	freeswitch_modules_ladspa? ( media-libs/ladspa-sdk )
+	freeswitch_modules_ldap? ( net-nds/openldap )
+	freeswitch_modules_managed? ( >=dev-lang/mono-1.9 )
+	freeswitch_modules_memcache? ( net-misc/memcached )
 	freeswitch_modules_opal? ( net-libs/opal[h323,iax] )
-	freeswitch_modules_opus? ( media-libs/opus )
+	freeswitch_modules_opus? ( >=media-libs/opus-1.1 )
 	freeswitch_modules_osp? ( >=net-libs/osptoolkit-4.0.3 )
 	freeswitch_modules_perl? ( dev-lang/perl[ithreads] )
 	freeswitch_modules_python? ( dev-lang/python:2.7[threads] )
-	freeswitch_modules_managed? ( >=dev-lang/mono-1.9 )
-	freeswitch_modules_sndfile? ( media-libs/libsndfile )
-	freeswitch_modules_skypopen? ( x11-base/xorg-server x11-apps/xhost net-im/skype media-fonts/font-misc-misc media-fonts/font-cursor-misc )
-	freeswitch_modules_memcache? ( net-misc/memcached )
-	freeswitch_modules_erlang_event? ( dev-lang/erlang )
 	freeswitch_modules_shout? ( media-libs/libogg )
+	freeswitch_modules_skypopen? ( x11-base/xorg-server x11-apps/xhost net-im/skype media-fonts/font-misc-misc media-fonts/font-cursor-misc )
+	freeswitch_modules_sndfile? ( >=media-libs/libsndfile-1.0.20 )
 	freeswitch_modules_spandsp? ( virtual/jpeg )
+	freeswitch_modules_radius_cdr? ( net-dialup/freeradius-client )
 	freeswitch_modules_redis? ( dev-db/redis )
-	freeswitch_modules_cdr_pg_csv? ( dev-db/postgresql )
-	freeswitch_modules_gsmopen? ( net-libs/ctb[-gpib] app-mobilephone/gsmlib )
+	freeswitch_modules_xml_curl? ( net-misc/curl )
+	freeswitch_modules_xml_ldap? ( net-nds/openldap )
 	freeswitch_modules_xml_ldap? ( net-nds/openldap[sasl] )
-	freeswitch_modules_ladspa? ( media-libs/ladspa-sdk )
+	freeswitch_modules_yaml? ( >=dev-libs/libyaml-0.1.4 )
+
 	freeswitch_modules_freetdm? (
-		freetdm_modules_misdn? ( >=net-dialup/misdnuser-2.0.0 )
 		freetdm_modules_libpri? ( >=net-libs/libpri-1.4.0 )
-		freetdm_modules_wanpipe? ( net-misc/wanpipe )
+		freetdm_modules_misdn? ( >=net-dialup/misdnuser-2.0.0 )
+		freetdm_modules_r2? ( net-misc/openr2 )
 		freetdm_modules_sng_isdn? ( net-libs/libsng-isdn )
 		freetdm_modules_sng_ss7? ( net-libs/libsng-ss7 )
-		freetdm_modules_r2? ( net-misc/openr2 )
+		freetdm_modules_wanpipe? ( net-misc/wanpipe )
 	)
 "
 #	freeswitch_modules_mp4? ( media-libs/libmp4v2 )
