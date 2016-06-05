@@ -54,7 +54,7 @@ FM_ENDPOINTS="
 	portaudio reference rtc rtmp skinny skypopen +sofia unicall verto
 "
 FM_EVENT_HANDLERS="
-	+cdr_csv cdr_mongodb cdr_pg_csv cdr_sqlite erlang_event
+	amqp +cdr_csv cdr_mongodb cdr_pg_csv cdr_sqlite erlang_event
 	event_multicast +event_socket event_test event_zmq json_cdr
 	radius_cdr snmp
 "
@@ -72,7 +72,7 @@ FM_TIMERS="
 	posix_timer timerfd
 "
 FM_XML="
-	xml_cdr xml_curl xml_ldap xml_rpc xml_scgi
+	xml_cdr xml_curl xml_ldap xml_radius xml_rpc xml_scgi
 "
 FM_EXTERNAL="
 	ssh
@@ -133,6 +133,7 @@ RDEPEND="
 	esl_python? ( dev-lang/python:2.7 )
 
 	freeswitch_modules_alsa? ( media-libs/alsa-lib )
+	freeswitch_modules_amqp? ( >=net-misc/rabbitmq-server-0.5.2 )
 	freeswitch_modules_cdr_pg_csv? ( dev-db/postgresql )
 	freeswitch_modules_enum? ( >=net-libs/ldns-1.6.6 )
 	freeswitch_modules_erlang_event? ( dev-lang/erlang )
@@ -184,7 +185,6 @@ DEPEND="${RDEPEND}
 
 PDEPEND="media-sound/freeswitch-sounds
 	media-sound/freeswitch-sounds-music
-	freeswitch_modules_ssh? ( net-voip/freeswitch-mod_ssh )
 "
 
 for x in ${FM} ${FM_EXTERNAL}; do
@@ -375,7 +375,6 @@ src_prepare() {
 	# Fix broken libtool?
 	sed -i "1i export to_tool_file_cmd=func_convert_file_noop" "${S}/libs/apr/Makefile.in"
 	sed -i "1i export to_tool_file_cmd=func_convert_file_noop" "${S}/libs/apr-util/Makefile.in"
-
 
 	if use freeswitch_modules_freetdm
 	then
