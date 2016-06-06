@@ -15,7 +15,7 @@ SLOT="0"
 
 SRC_URI="http://files.freeswitch.org/releases/freeswitch/${P}.tar.xz"
 # No idea what USE=libedit is actually good for
-IUSE="esl libedit odbc +resampler +zrtp debug"
+IUSE="esl libedit odbc postgres +resampler +zrtp debug"
 
 LANGS="de en es es_ar fa fr he hr hu it ja nl pl pt ru sv th zh"
 
@@ -99,6 +99,7 @@ FM_BROKEN=""
 REQUIRED_USE="
 	|| ( linguas_de linguas_en linguas_es linguas_fa linguas_fr linguas_he linguas_hr linguas_hu linguas_it linguas_ja linguas_nl linguas_pt linguas_ru linguas_th linguas_zh )
 	esl? ( freeswitch_modules_esl )
+	freeswitch_modules_cdr_pg_csv? ( postgres )
 	freeswitch_modules_esl? ( esl )
 	freeswitch_modules_limit? ( freeswitch_modules_db freeswitch_modules_hash )
 	freeswitch_modules_nibblebill? ( odbc )
@@ -420,6 +421,7 @@ src_configure() {
 		--with-scriptdir="/usr/share/${PN}/scripts" \
 		--with-recordingsdir="/var/lib/${PN}/recordings" \
 		--with-pkgconfigdir="/usr/$(get_libdir)/pkgconfig" \
+		$(use_enable postgres core-pgsql-support) \
 		$(use_enable zrtp) \
 		$(use_with freeswitch_modules_python python "$(PYTHON -a)") \
 		$(use_enable resampler resample) \
