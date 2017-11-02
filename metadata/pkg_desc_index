@@ -17,5 +17,5 @@ net-libs/sofia-sip 9999: RFC3261 compliant SIP User-Agent library
 net-libs/stfu 0.0.1.0_rc3: 
 net-misc/freetdm 1.0.2: Library implementing unified high level API for both signaling and I/O for multiple telephony boards
 net-misc/wanpipe 3.5.27 3.7.0_p8: Wanpipe driver for Sangoma PCI/PCIe Telephony Cards
-net-voip/freeswitch 1.6.2 1.6.8 1.6.8-r1 1.6.19 9999: FreeSWITCH telephony platform
+net-voip/freeswitch 1.6.8-r1 1.6.19 9999: FreeSWITCH telephony platform
 net-voip/freeswitch-mod_ssh 9999: SSH Console module for FreeSWITCH
