@@ -2,20 +2,3 @@
 # Please add your descriptions to your package's metadata.xml ONLY.
 # * generated automatically using pmaint *
 
-media-sound/freeswitch-sounds:16k - Install sound files with 16000 Hz sampling rate
-media-sound/freeswitch-sounds:32k - Install sound files with 32000 Hz sampling rate
-media-sound/freeswitch-sounds:48k - Install sound files with 48000 Hz sampling rate
-media-sound/freeswitch-sounds:8k - Install sound files with 8000 Hz sampling rate
-media-sound/freeswitch-sounds-music:16k - Install sound files with 16000 Hz sampling rate
-media-sound/freeswitch-sounds-music:32k - Install sound files with 32000 Hz sampling rate
-media-sound/freeswitch-sounds-music:48k - Install sound files with 48000 Hz sampling rate
-media-sound/freeswitch-sounds-music:8k - Install sound files with 8000 Hz sampling rate
-net-voip/freeswitch:esl - Event-Socket Library
-net-voip/freeswitch:esl-lua - LUA bindings for ESL
-net-voip/freeswitch:esl-perl - Perl bindings for ESL
-net-voip/freeswitch:esl-python - Python bindings for ESL
-net-voip/freeswitch:fax - Fax receive/transmit application module inclusion (mod_spandsp)
-net-voip/freeswitch:libpri - Build OpenZAP/FreeTDM with libpri module
-net-voip/freeswitch:resampler - Enable support for up-/downsampling of audio (e.g. 48KHz -> 8KHz)
-net-voip/freeswitch:samples - Install sample configuration files
-net-voip/freeswitch:sctp - Enable SCTP (Stream-Control-Transport-Protocol) support (mod_sofia, ...)
